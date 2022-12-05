@@ -14,10 +14,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: getDefaultThemeData(),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+
+  ThemeData getDefaultThemeData() {
+    return ThemeData(
+      primarySwatch: Colors.blue,
     );
   }
 }
