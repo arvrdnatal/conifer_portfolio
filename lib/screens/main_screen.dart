@@ -1,3 +1,4 @@
+import 'package:conifer_portfolio/utilities/localization.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -11,6 +12,10 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Text(getAppLocalizationsOf(context)!.helloWorld),
+      ),
+    );
   }
 }
