@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Conifer's Portfolio",
+      title: "Júlia Lamboglia",
       debugShowCheckedModeBanner: false,
       theme: getDefaultThemeData(),
       localizationsDelegates: localizationsDelegates,
