@@ -21,6 +21,12 @@ class MyApp extends StatelessWidget {
     Locale('en', ''),
     Locale('pt', ''),
   ];
+  final colorScheme = {
+    'bgAll': const Color.fromRGBO(13, 10, 11, 1),
+    'bgWidgets': const Color.fromRGBO(30, 30, 31, 1),
+    'text': const Color.fromRGBO(243, 239, 245, 1),
+    'primary': const Color.fromRGBO(114, 176, 29, 1),
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +42,7 @@ class MyApp extends StatelessWidget {
 
   ThemeData getDefaultThemeData() {
     return ThemeData(
-      scaffoldBackgroundColor: Colors.brown.shade900,
+      scaffoldBackgroundColor: colorScheme['bgAll'],
       brightness: Brightness.dark,
     );
   }
